@@ -1,0 +1,134 @@
+﻿:root {
+    --gc-blue: #0068A9;
+    --gc-gray: #57575A;
+}
+
+@font-face {
+    font-family: 'norwester';
+    src: url('content/fonts/norwester.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'metropolis';
+    src: url('content/fonts/Metropolis-Bold.otf') ;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.text-gc-blue {
+    color: var(--gc-blue);
+}
+
+.bg-gc-blue {
+    background-color: var(--gc-blue);
+}
+
+.bg-gc-gray {
+    background-color: var(--gc-gray);
+}
+
+.banner-font {
+    font-family: metropolis;
+}
+
+.btn-gc-blue,
+.btn-gc-blue.active,
+.btn-gc-blue:hover {
+    color: #fff !important;
+    background-color: var(--gc-blue) !important;
+    border-color: var(--gc-blue) !important;
+}
+
+.text-primary {
+    color: var(--gc-blue) !important; 
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    background-color: var(--gc-blue) !important;
+}
+
+body
+{
+    padding-top: 4.5em;
+}
+
+section {
+    padding-bottom: 6em;
+    padding-top: 6em;
+}
+
+main {
+    min-height: calc(100vh - 195px);
+}
+
+h1.section-heading,
+h2.section-heading,
+h3.section-heading {
+    font-family: metropolis;
+}
+
+h1.section-heading {
+    font-size: 3.5em;
+}
+
+h2.section-heading {
+    font-size: 3em;
+}
+
+h3.section-heading {
+    font-size: 2.5em;
+}
+
+.feature-icon-small {
+    height: 2em;
+    width: 2em;
+}
+
+.text-todo {
+    color: #dc3545;
+    font-weight:700;
+}
+
+#headerimage {
+    position: absolute;
+    max-height: 528px;
+    top: -5.75rem;
+    right: 0;
+    height: auto;
+    width: auto;
+    z-index: -1;
+}
+
+@media (min-width: 1200px) {
+    #navbarCollapse > ul {
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #headerimage {
+        max-height: 550px;
+    }
+}
+
+@media (max-width: 1400px) {
+    #headerimage {
+        right: -100px;
+    }
+}
+
+@media (max-width: 1200px) {
+    #headerimage {
+        opacity: .20;
+        right: 0;
+    }
+}
+
+@media (max-width: 990px) {
+    #headerimage {
+        right: -100px;
+    }
+}
+
